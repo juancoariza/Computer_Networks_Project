@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Digital Controller</title>
+
+  <!-- linking to the CSS  -->
+  <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+</head>
+
+
+<body>
+  <!-- DESIGN INFORMATION -->
+  <!-- Banner Division -->
+  <div id="banner"><h1>Digital Controller</h1></div>
+  <!-- Quick Break -->
+  <br><hr class="grdn"><br>
+
+  <!-- Division that holds the map and the buttons -->
+  <div id="mainElement">
+    <div id= 'map'></div>
+    <button id= "resetBtn" onclick="rstBtn()" class="rstbutton" align="center"><rst>Reset</rst></button>
+    <button id= "goBtn" onclick="pushToDB()" class="button" align="center"><span>Pilot</span></button>
+  </div>
+
+  <!-- INCLUDE YOUR OWN GOOGLE MAPS API INFORMATION -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+
+  <script>
+	  // Include your own Firebase project information here
+	  
+  // Initialize Firebase
+  var config = {
+    apiKey: "<API_KEY>",
+    authDomain: "<PROJECT_ID>.firebaseapp.com",
+    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
+    storageBucket: "<BUCKET>.appspot.com",
+    messagingSenderId: "<SENDER_ID>",
+  };
+  firebase.initializeApp(config);
+  </script>
+
+    <!--This is the js code script-->
+    <script src = "assets/app.js"></script>
+
+</body>
+</html>
