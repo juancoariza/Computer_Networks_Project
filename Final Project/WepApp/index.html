@@ -34,18 +34,29 @@
 	  // Include your own Firebase project information here
 	  
   // Initialize Firebase
-  var config = {
-    apiKey: "<API_KEY>",
-    authDomain: "<PROJECT_ID>.firebaseapp.com",
-    databaseURL: "https://<DATABASE_NAME>.firebaseio.com",
-    storageBucket: "<BUCKET>.appspot.com",
-    messagingSenderId: "<SENDER_ID>",
-  };
-  firebase.initializeApp(config);
-  </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
 
-    <!--This is the js code script-->
-    <script src = "assets/app.js"></script>
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCiMJ8Do_yv6udY1NRR9McBvsg5FbUPFrQ",
+    authDomain: "remote-control-drone.firebaseapp.com",
+    databaseURL: "https://remote-control-drone.firebaseio.com",
+    projectId: "remote-control-drone",
+    storageBucket: "remote-control-drone.appspot.com",
+    messagingSenderId: "127569993662",
+    appId: "1:127569993662:web:fc3762088c3cecae4223ef",
+    measurementId: "G-CM67K9YB0V"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 
 </body>
 </html>
