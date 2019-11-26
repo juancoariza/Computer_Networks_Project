@@ -1,37 +1,48 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:bold);
 
-body{
-  background: -webkit-linear-gradient(#025965, #436D73);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height:100vh; /* <--- WTF CSS!!! 100% of the viewport height */
-}
-#banner{
-  display: flex;
-  /*border: 2px solid red;*/
-  justify-content: center;
-  align-items: center;
-  font-family: raleway;
-  color: #c2d6d6;
-  height: 150px;
-  width: auto;
+* {
+  margin: 0px;
+  padding: 0px;
   text-align: center;
 }
-#map{
-  height: 450px;
-  width: 99.9%;
-  margin:0 auto;
+
+body {
+  background: -webkit-linear-gradient(#025985, #025985);
 }
 
+#banner{
+  margin-top: 20px;
+  font-family: raleway;
+  color: #c2d6d6;
+  height: 60px;
+  font-size: 50px;
+  width: auto;
+}
+
+#map{
+  height: 450px;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+#toggleBetweenModeButtons {
+	height: 100px;
+	margin-top: 20px;
+}
+
+/* Don't need, garbage code */
+/*
 #mainElement{
   height: 600px;
   width: 1100px;
   margin:0 auto;
-  /*border-style: groove;*/
+  /*border-style: groove;
   box-shadow: 10px 5px 10px #000000;
   position: relative;
   background-color: #012E34;
 }
+*/
 
 .grdn {
   border: 0;
@@ -46,7 +57,6 @@ body{
 	border: none;
 	color: #FFFFFF;
 	position: absolute;
-	/*left: 40%;*/
 	left: 20%;
 	bottom:5%;
 	text-align: center;
