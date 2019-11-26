@@ -107,7 +107,7 @@ function showMarkers() {
 }
 
 
-// Work In progress... As it is, it only remeves the very last pin, ONCE
+// Work In progress... As it is, it only removes the very last pin, ONCE
 function removeLastMarker(){
 
   var toBeRemoved2 = cleanCoords.indexOf(cleanCoords[cleanCoords.length-1]);

@@ -26,37 +26,47 @@
     <button id= "goBtn" onclick="pushToDB()" class="button" align="center"><span>Pilot</span></button>
   </div>
 
-  <!-- INCLUDE YOUR OWN GOOGLE MAPS API INFORMATION -->
-  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-  <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+  <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat:26.464546315991463, lng:-81.76931453403085},
+          zoom: 18
+        });
+      }
+    </script>
 
-  <script>
-	  // Include your own Firebase project information here
-	  
-  // Initialize Firebase
-  <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-app.js"></script>
+    <!-- INCLUDE YOUR OWN GOOGLE MAPS API INFORMATION -->
+    <!-- API has been updated 2019 -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDzBO2saGas0oOUAEizOGUc4XKihzStTrQ&callback=initMap"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.3.0/firebase-analytics.js"></script>
+    <!-- 2019 Update -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-app.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCiMJ8Do_yv6udY1NRR9McBvsg5FbUPFrQ",
-    authDomain: "remote-control-drone.firebaseapp.com",
-    databaseURL: "https://remote-control-drone.firebaseio.com",
-    projectId: "remote-control-drone",
-    storageBucket: "remote-control-drone.appspot.com",
-    messagingSenderId: "127569993662",
-    appId: "1:127569993662:web:fc3762088c3cecae4223ef",
-    measurementId: "G-CM67K9YB0V"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.4.0/firebase-analytics.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyCYq2YW5_huT1w8PiVDv_1S1q36qogqYME",
+        authDomain: "solo-drone.firebaseapp.com",
+        databaseURL: "https://solo-drone.firebaseio.com",
+        projectId: "solo-drone",
+        storageBucket: "solo-drone.appspot.com",
+        messagingSenderId: "449191460456",
+        appId: "1:449191460456:web:79019b01dba7a4fef445dd",
+        measurementId: "G-4MNSP0CLY1"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+    </script>
+    <!-- End 2019 Update -->
 
 </body>
 </html>
