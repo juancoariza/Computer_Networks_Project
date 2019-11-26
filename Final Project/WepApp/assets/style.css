@@ -28,7 +28,7 @@ body {
 
 #toggleBetweenModeButtons {
 	height: 100px;
-	margin-top: 20px;
+	margin-top: 10%;
 }
 
 /* Don't need, garbage code */
@@ -50,6 +50,25 @@ body {
   background-image: -webkit-linear-gradient(left, #025965, #ffffff, #025965);
 }
 
+.keyboardButtonsHelper {
+	display: inline-block;
+    vertical-align: top;
+}
+
+.keyboardButtonImage {
+	width: 100%;
+	margin-top: 60%;
+}
+
+.pictureButtonsHelper {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.pictureButtonImage {
+	width: 100%;
+	vertical-align: top;
+}
 
 .button {
 	border-radius: 4px;

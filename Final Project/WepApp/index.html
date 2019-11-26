@@ -25,7 +25,7 @@
   <div class="container">
     <div class="row">
       <div class="col">
-        1 of 3
+        <span class="keyboardButtonsHelper"></span><img class="keyboardButtonImage" src="assets/img/keyboardarrows.png">
       </div>
       <div class="col-8">
 
@@ -43,8 +43,8 @@
 
         <!-- Division that holds the map and the buttons -->
         <div id="toggleBetweenModeButtons">
-          <button id= "resetBtn" onclick="rstBtn()" class="rstbutton" align="center"><rst>Reset</rst></button>
-          <button id= "goBtn" onclick="pushToDB()" class="button" align="center"><span>Pilot</span></button>
+          <button id= "goBtn" onclick="pushToDB()" class="button" align="center"><span>Auto-Pilot</span></button>
+          <button id= "resetBtn" onclick="rstBtn()" class="rstbutton" align="center"><rst>Manual</rst></button>
         </div>
 
         <!-- INCLUDE YOUR OWN GOOGLE MAPS API INFORMATION -->
@@ -77,12 +77,10 @@
           firebase.initializeApp(firebaseConfig);
           firebase.analytics();
         </script>
-        <!-- End 2019 Update -->
-
-      2 of 3
       </div>
       <div class="col">
-        3 of 3
+        <span class="pictureButtonsHelper"></span><img class="pictureButtonImage" src="assets/img/go.png">
+        <span class="pictureButtonsHelper"></span><img class="pictureButtonImage" src="assets/img/stop.png">
       </div>
     </div>
   </div>
