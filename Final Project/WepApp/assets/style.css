@@ -31,19 +31,6 @@ body {
 	margin-top: 10%;
 }
 
-/* Don't need, garbage code */
-/*
-#mainElement{
-  height: 600px;
-  width: 1100px;
-  margin:0 auto;
-  /*border-style: groove;
-  box-shadow: 10px 5px 10px #000000;
-  position: relative;
-  background-color: #012E34;
-}
-*/
-
 .grdn {
   border: 0;
   height: 1px;
