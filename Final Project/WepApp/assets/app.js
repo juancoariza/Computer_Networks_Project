@@ -1,4 +1,5 @@
 // Created by Yamnel S.
+// Edited and Updated by Randy Hattab
 
 var cleanCoords = [];
 

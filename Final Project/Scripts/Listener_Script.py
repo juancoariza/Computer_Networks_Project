@@ -1,11 +1,22 @@
+# Created by Yamnel S.
+# Edited and Updated by Randy Hattab
+
 import pyrebase, os
 
-# Created by Yamnel S.
+# Firebase Authentication
+# Should be filled with your own Firebase Authentication info
+import firebase_admin
+from firebase_admin import credentials
+# Firebase initialization
+cred = credentials.Certificate("path/to/5b6bfdbb849f19b23cfed8c456953b5f8086680e.json")
+firebase_admin.initialize_app(cred)
+
 
 class Listener_Script:
     def __init__(self):
         self.ready = True
 
+"""
         # This information should be filled with your own Firebase authentication info
         config = {
           "apiKey": "apiKey",
@@ -13,7 +24,8 @@ class Listener_Script:
           "databaseURL": "https://databaseName.firebaseio.com",
           "storageBucket": "projectId.appspot.com",
           "serviceAccount": "path/to/serviceAccountCredentials.json"
-        }
+        }pushToDB
+"""
 
         ###### Firebase Connection #######
         firebase = pyrebase.initialize_app(config) # initiation Firebase link through Pyrebase

@@ -37,6 +37,7 @@ function release(e){
     left = false
   }
 }
+
 function gameLoop(){
   var div = document.querySelector('div')
   if (up){
