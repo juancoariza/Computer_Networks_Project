@@ -97,6 +97,17 @@ function setMapOnAll(map) {
   }
 }
 
+// Function to start on Autopilot
+function startAutopilot() {
+
+
+}
+
+// Function to stop Autopilot
+function stopAutopilot() {
+
+}
+
 // Removes the markers from the map, but keeps them in the array.
 function clearMarkers() {
   setMapOnAll(null);

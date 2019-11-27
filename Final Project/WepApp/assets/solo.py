@@ -113,7 +113,8 @@ while not Solo.vehicle.armed: print(" Waiting for arming...") time.sleep(1)
 print("Armed Successfully.")
 """
 Function: TakeOff
-TakeOff the drone to desired altitude """
+TakeOff the drone to desired altitude 
+"""
 def TakeOff(self, aTargetAltitude):
     # Confirm vehicle armed before attempting to take off
 if not Solo.vehicle.armed:
